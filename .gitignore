@@ -8,3 +8,6 @@ Bundler/*/*/*.o
 Bundler/lib
 Bundler/bin
 Bundler/src
+ACG_Localizer/flann-1.6.11-src-modified/build
+ann_1.1.2/src
+ann_1.1.2/sample

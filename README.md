@@ -23,6 +23,9 @@ Then generated file is in `Bundler/info`
 
 # ACG_Localizer
 
+## Environment
+- `sudo apt-get install libgtest-dev`
+
 ## Installztion
 This is the code from paper *Fast Image-Based Localization using Direct 2D-to-3D Matching* found here https://www.graphics.rwth-aachen.de/software/image-localization.
 
@@ -33,7 +36,8 @@ The dependencies needed as listed in the README.txt:
   - ANN -  Get it from http://www.cs.umd.edu/~mount/ANN/
       Installation notes in their doc. **Before** compiling it change `typedef double ANNcoord;` into `typedef float ANNcoord;`  in file `ann_1.1.2/include/ANN/ANN.h`.  I also had to uncomment line 62 in  `ann_1.1.2/Makefile`, `#cd test ; $(MAKE) $@`.  
       
-  - FLANN - Modified version included, follow the instructions in `flann-1.6.11-src-modified/doc/manual.pdf` and also run `make install` - might need to `sudo` it.
+  - FLANN - Modified version included, follow the instructions in `flann-1.6.11-src-modified/doc/manual.pdf` and also run `make install` - might need to `sudo` it. 
+  - I commet the latex compilier in `CMakeLists.txt` line 110
       
   - GMM - run `sudo apt-get install libgetfem++-dev`
   - LAPACK  - run `sudo apt-get install libblas-dev liblapack-dev` 
