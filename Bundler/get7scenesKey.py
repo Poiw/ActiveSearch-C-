@@ -44,7 +44,7 @@ def main():
 
     with open(os.path.join(dataDir, 'testList.txt'), 'w') as f:
         for line in testList:
-            f.write(line)
+            f.write(line[:-3] + 'key')
 
 
         
