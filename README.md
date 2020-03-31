@@ -35,14 +35,17 @@ The dependencies needed as listed in the README.txt:
 
   - ANN -  Get it from http://www.cs.umd.edu/~mount/ANN/
       Installation notes in their doc. **Before** compiling it change `typedef double ANNcoord;` into `typedef float ANNcoord;`  in file `ann_1.1.2/include/ANN/ANN.h`.  I also had to uncomment line 62 in  `ann_1.1.2/Makefile`, `#cd test ; $(MAKE) $@`.  
+  - Should add ANN path when make ACG_Localizer
       
   - FLANN - Modified version included, follow the instructions in `flann-1.6.11-src-modified/doc/manual.pdf` and also run `make install` - might need to `sudo` it. 
-  - I commet the latex compilier in `CMakeLists.txt` line 110
+  <!-- - I commet the latex compilier in `CMakeLists.txt` line 110 -->
       
   - GMM - run `sudo apt-get install libgetfem++-dev`
   - LAPACK  - run `sudo apt-get install libblas-dev liblapack-dev` 
   - F2C - I had to install that aswell, run `sudo apt-get install f2c`
   - The rest of the dependencies `jhead`, `OpenMesh`, `SFMT` should be included.
+
+  Remeber modify `FindANN.cmake` and `FindFLANN.cmake` 
 
 Please raise an issue if you come across a problem.
 

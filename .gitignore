@@ -11,5 +11,6 @@ Bundler/src
 Bundler/prepare
 .vscode
 ACG_Localizer/flann-1.6.11-src-modified/build
+ACG_Localizer/flann-1.6.11-src-modified/CMakeFiles
 ann_1.1.2/src
 ann_1.1.2/sample

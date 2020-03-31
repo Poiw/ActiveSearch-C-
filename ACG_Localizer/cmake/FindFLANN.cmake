@@ -23,7 +23,7 @@ set( LIBDIR lib64 )
 if( FLANN_INCLUDE_DIR )
    set( FLANN_FOUND TRUE )
 
-   set( FLANN_LIBRARY_DIR "/home/cs18/Documents/active-search/ACG_Localizer-master/flann-1.6.11-src-modified/build/lib" )
+   set( FLANN_LIBRARY_DIR "/home/wsy/Data/poi/ActiveSearch-C-/ACG_Localizer/flann-1.6.11-src-modified/build/lib" )
 
    set( FLANN_LIBRARY optimized flann_cpp debug flann_cpp )
 

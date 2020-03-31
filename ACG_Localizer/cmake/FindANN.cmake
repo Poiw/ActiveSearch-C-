@@ -20,14 +20,14 @@ endif()
 
 
 FIND_PATH(ANN_INCLUDE_DIR ANN/ANN.h
-	  PATHS "/home/cs18/Documents/active-search/ann_1.1.2/include"
+	  PATHS "/home/wsy/Data/poi/ActiveSearch-C-/ann_1.1.2/include"
           NO_DEFAULT_PATH
                 )
 
 if( ANN_INCLUDE_DIR )
    set( ANN_FOUND TRUE )
 
-   set( ANN_LIBRARY_DIR "/home/cs18/Documents/active-search/ann_1.1.2/lib" )
+   set( ANN_LIBRARY_DIR "/home/wsy/Data/poi/ActiveSearch-C-/ann_1.1.2/lib" )
 
    set( ANN_LIBRARY optimized ANN debug ANN )
 
