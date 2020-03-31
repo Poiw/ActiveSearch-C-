@@ -64,8 +64,15 @@ def main():
         rvec = cv2.Rodrigues(np.linalg.inv(pred_rot) @ std_rot)
 
         tmp_err = np.linalg.norm(rvec[0]) / math.pi * 180
-        rerr.append(min(tmp_err, 180-tmp_err))
-        terr.append(np.linalg.norm(pred_trans - std_trans))
+        _rerr = min(tmp_err, 180-tmp_err)
+        _terr = np.linalg.norm(pred_trans - std_trans)
+
+        if np.isnan(_rerr):
+            _rerr = 90
+        if np.isnan(_terr):
+            _terr = 10
+        rerr.append(_rerr)
+        terr.append(_terr)
 
         print(pred)
 
