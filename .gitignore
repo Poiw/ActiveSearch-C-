@@ -1,3 +1,10 @@
 ACG_Localizer/build
 Bundler/bundle
 Bundler/info
+Bundler/*/*.a 
+Bundler/*/*.so
+Bundler/*/*.o
+Bundler/*/*/*.o
+Bundler/lib
+Bundler/bin
+Bundler/src

@@ -1,7 +1,7 @@
 # Bundle
 
 ## Environment
-- `sudo apt-get install gfortran`
+- `sudo apt-get install gfortran liblapack-dev libblas-dev lib32ncurses5 lib32z1`
 - comment `BundlerApp.h` line 620
 - May need to add `<root>/Bundler/bin` to `LD_LIBRARY` 
 
