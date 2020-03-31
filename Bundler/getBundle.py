@@ -28,6 +28,7 @@ def main():
         exit(0)
     
     dataListname = str(sys.argv).split()[1][1:-2]
+    print(dataListname)
 
     fileList = []
     with open(dataListname) as f:
@@ -89,7 +90,7 @@ def main():
             spacePoints.append(( (np.median(coordx), np.median(coordy), np.median(coordz)), (np.median(colorr), np.median(colorg), np.median(colorb)), points))
 
     print('start write')
-    with open('./Bundler/info/bundle.ours', 'w') as f:
+    with open('./info/bundle.ours', 'w') as f:
         f.write('# Bundle file v0.3\n')
         f.write('{} {}\n'.format(len(fileList), len(spacePoints)))
         for i in range(len(fileList)):

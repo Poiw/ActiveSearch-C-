@@ -18,7 +18,7 @@
 - `../RunBundler.sh <file_dir>`
 
 ## Generate bundle.out
-- `python3 getBundle.py <list_file>`
+- `python3 Bundle/getBundle.py <list_file>`
 Then generated file is in `Bundler/info`
 
 # ACG_Localizer
